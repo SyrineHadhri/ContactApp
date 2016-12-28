@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>contactModel</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      Contact informations
+    </ion-card-header>
+
+    <ion-list>
+      <img style="width:25%;height:25%;margin-left:3%" src="{{contact.picture}}"/>
+
+      <button ion-item>
+        <ion-icon name="person" item-left></ion-icon>
+        {{contact.firstName}} {{contact.lastName}}
+      </button>
+
+      <button ion-item>
+        <ion-icon name="briefcase" item-left></ion-icon>
+        {{contact.title}}
+      </button>
+
+      <button ion-item>
+        <ion-icon name="call" item-left></ion-icon>
+        {{contact.phone}}
+      </button>
+
+      <button ion-item>
+        <ion-icon name="mail" item-left></ion-icon>
+        {{contact.email}}
+      </button>
+
+
+    </ion-list>
+  </ion-card>
+</ion-content>
